@@ -1,0 +1,303 @@
+.third-slides {
+  width: 200%;
+  height: 100%;
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  -webkit-animation:third-slide 30s infinite;
+  -moz-animation:third-slide 30s infinite;
+  animation:third-slide 30s infinite;
+  overflow: hidden;
+}
+
+/* Animation */
+@-webkit-keyframes third-slide{
+  0%,100%{
+    margin-left:0%;
+    opacity: 1;
+  }
+  16%{
+    margin-left:0%;
+    opacity: 1;
+  }
+  18%{
+    opacity: 0;
+  }
+  20%{
+    margin-left:-20%;
+    opacity: 1;
+  }
+  36%{
+    margin-left:-20%;
+    opacity: 1;
+  }
+  38%{
+    opacity: 0;
+  }
+  40%{
+    margin-left:-40%;
+    opacity: 1;
+  }
+  56%{
+    margin-left:-40%;
+    opacity: 1;
+  }
+  58%{
+    opacity: 0;
+  }
+  60%{
+    margin-left:-60%;
+    opacity: 1;
+  }
+  76%{
+    margin-left:-60%;
+    opacity: 1;
+  }
+  78%{
+    opacity: 0;
+  }
+  80%{
+    margin-left:-80%;
+    opacity: 1;
+  }
+  96%{
+    margin-left:-80%;
+    opacity: 1;
+  }
+}
+
+@-moz-keyframes third-slide{
+  0%,100%{
+    margin-left:0%;
+    opacity: 1;
+  }
+  16%{
+    margin-left:0%;
+    opacity: 1;
+  }
+  18%{
+    opacity: 0;
+  }
+  20%{
+    margin-left:-20%;
+    opacity: 1;
+  }
+  36%{
+    margin-left:-20%;
+    opacity: 1;
+  }
+  38%{
+    opacity: 0;
+  }
+  40%{
+    margin-left:-40%;
+    opacity: 1;
+  }
+  56%{
+    margin-left:-40%;
+    opacity: 1;
+  }
+  58%{
+    opacity: 0;
+  }
+  60%{
+    margin-left:-60%;
+    opacity: 1;
+  }
+  76%{
+    margin-left:-60%;
+    opacity: 1;
+  }
+  78%{
+    opacity: 0;
+  }
+  80%{
+    margin-left:-80%;
+    opacity: 1;
+  }
+  96%{
+    margin-left:-80%;
+    opacity: 1;
+  }
+}
+
+@keyframes third-slide{
+  0%,100%{
+    margin-left:0%;
+    opacity: 1;
+  }
+  16%{
+    margin-left:0%;
+    opacity: 1;
+  }
+  18%{
+    opacity: 0;
+  }
+  20%{
+    margin-left:-20%;
+    opacity: 1;
+  }
+  36%{
+    margin-left:-20%;
+    opacity: 1;
+  }
+  38%{
+    opacity: 0;
+  }
+  40%{
+    margin-left:-40%;
+    opacity: 1;
+  }
+  56%{
+    margin-left:-40%;
+    opacity: 1;
+  }
+  58%{
+    opacity: 0;
+  }
+  60%{
+    margin-left:-60%;
+    opacity: 1;
+  }
+  76%{
+    margin-left:-60%;
+    opacity: 1;
+  }
+  78%{
+    opacity: 0;
+  }
+  80%{
+    margin-left:-80%;
+    opacity: 1;
+  }
+  96%{
+    margin-left:-80%;
+    opacity: 1;
+  }
+}
+
+.third-img {
+  position: relative;
+}
+
+.heart-container {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display:inline-block;
+  top: 0;
+  left: 0;
+  color: #fff;
+  font-family: 'Rajdhani SemiBold';
+  font-size: 2.5vw;
+  letter-spacing: 1px;
+  line-height: 600%;
+  cursor: pointer;
+  text-align: center;
+  z-index: 1;
+  opacity: 0;
+  transition: linear .2s;
+}
+
+.heart {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: linear .2s;
+}
+
+.like a:target,
+.like a:last-child {
+  width: 32px;
+  height: 32px;
+  display: block;
+}
+
+.like a,
+.like a:target ~ a:last-child {
+  display: none;
+}
+
+.third-img:hover .heart-container {
+  background: rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+  opacity: 1;
+  transition: linear .2s;
+}
+
+
+#likes,
+#likes2,
+#likes3,
+#likes4,
+#likes5,
+#likes6,
+#likes7,
+#likes8,
+#likes9,
+#likes10 {
+  position: absolute;
+  top: 15%;
+  font-family: 'Rajdhani SemiBold';
+  font-size: 15px;
+  color: #fff;
+  text-align: center;
+}
+
+@media only screen and (max-width: 980px) {
+  #likes,
+  #likes2,
+  #likes3,
+  #likes4,
+  #likes5,
+  #likes6,
+  #likes7,
+  #likes8,
+  #likes9,
+  #likes10 {
+    top: 20%;
+}
+}
+
+@media only screen and (max-width: 700px) {
+  .like a:target,
+  .like a:last-child {
+    width: 25px;
+    height: 25px;
+  }
+  #likes,
+  #likes2,
+  #likes3,
+  #likes4,
+  #likes5,
+  #likes6,
+  #likes7,
+  #likes8,
+  #likes9,
+  #likes10 {
+    font-size: 13px;
+  }
+}
+
+@media only screen and (max-width: 580px) {
+  .like a:target,
+  .like a:last-child {
+    width: 20px;
+    height: 20px;
+  }
+  #likes,
+  #likes2,
+  #likes3,
+  #likes4,
+  #likes5,
+  #likes6,
+  #likes7,
+  #likes8,
+  #likes9,
+  #likes10 {
+    font-size: 12px;
+    top: 30%;
+  }
+}

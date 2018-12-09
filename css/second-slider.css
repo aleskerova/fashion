@@ -1,0 +1,102 @@
+.second-sliders-container {
+  width: 100%;
+  margin-top: 3%;
+}
+
+.second-slider-title {
+  color: #504E4E;
+  font-family: 'Rajdhani';
+  font-size: 18px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.second-slider-title span {
+  margin: 0 15px;
+}
+
+.second-slider-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 3% 0%;
+  z-index: 0;
+  overflow: hidden;
+ }
+
+#second-slider,
+#third-slider,
+#fourth-slider {
+  width: 90%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  top: 7%;
+  left: 0;
+  margin: 0;
+  padding: 0;
+}
+
+.second-slides {
+  width: 200%;
+  height: 100%;
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  -webkit-animation:second-slide 30s infinite;
+  -moz-animation:second-slide 30s infinite;
+  animation:second-slide 30s infinite;
+
+  transition: linear .4s;
+  overflow: hidden;
+}
+
+.second-slider img{
+  width: 100%;
+  height: auto;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.second-image{
+  width: 95%;
+  height: auto;
+  position: relative;
+  cursor: pointer;
+}
+
+#btn-prev,
+#btn-next {
+  margin-top: 10%;
+  width: 32px;
+  height: 32px;
+  cursor: pointer;
+  transition: linear .2s;
+}
+
+#btn-prev {
+  opacity: .3;
+}
+
+#btn-prev img,
+#btn-next img {
+  width: 60%;
+  height: 60%;
+}
+
+#btn-prev:hover,
+#btn-next:hover {
+  transform: scale(.9);
+  transition: linear .2s;
+}
+
+
+
+@media only screen and (max-width: 900px) {
+  .second-slider-container {
+    justify-content: space-between;
+  }
+}
