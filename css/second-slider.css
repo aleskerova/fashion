@@ -4,11 +4,15 @@
 }
 
 .second-slider-title {
+  width: 100%;
+  margin: 0;
+  padding: 0;
   color: #504E4E;
   font-family: 'Rajdhani';
   font-size: 18px;
   text-transform: uppercase;
   text-align: center;
+  margin-top: 40px;
 }
 
 .second-slider-title span {
